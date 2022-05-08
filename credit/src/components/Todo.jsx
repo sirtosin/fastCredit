@@ -59,7 +59,7 @@ const Todo = ({ index, todo, todos, setTodos }) => {
     }
 
     return (
-        <div className="m-4 bg-gray-300 shadow-lg p-4 rounded-lg transition-all duration-75 ease-out hover:scale-105">
+        <div className="m-4 bg-gray-300 shadow-lg p-4 rounded-lg transition-all duration-75 ease-out hover:scale-95">
             <form
                 onSubmit={(e) => handleEdit(e, todo.id)}
                 className="flex items-center justify-around "
