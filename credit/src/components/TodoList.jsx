@@ -17,21 +17,22 @@ const TodoList = ({
            
             
             {validate && mytodos ?  mytodos?.map((todo, index) => (
-                <Todo
+                todo.user === user.email ? <Todo
                     index={index}
                     todos={mytodos}
                     todo={todo}
                     key={todo.id}
                     setTodos={setTodos}
-                />
+                />: null
             )) : todos?.map((todo, index) => (
-                <Todo
+                todo.user === user.email ? <Todo
                     index={index}
                     todos={todos}
                     todo={todo}
                     key={todo.id}
                     setTodos={setTodos}
-                />
+                />: null
+              
             )) }
        
         </div>
