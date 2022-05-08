@@ -102,13 +102,13 @@ const Todo = ({ index, todo, todos, setTodos }) => {
                 <>
                     <h6 className="font-medium text-sm text-gray-500 mt-4">select day of completion</h6>
                     <div className="flex flex-wrap space-x-2">
-                        <p onClick={() => setDeadline(1)} className="date">sunday</p>
-                        <p onClick={() => setDeadline(2)} className="date">monday</p>
-                        <p onClick={() => setDeadline(3)} className="date">tuesday</p>
-                        <p onClick={() => setDeadline(4)} className="date">wednesday</p>
-                        <p onClick={() => setDeadline(5)} className="date">thursday</p>
-                        <p onClick={() => setDeadline(6)} className="date">friday</p>
-                        <p onClick={() => setDeadline(7)} className="date">saturday</p>
+                        <p onClick={() => setDeadline(0)} className="date">sunday</p>
+                        <p onClick={() => setDeadline(1)} className="date">monday</p>
+                        <p onClick={() => setDeadline(2)} className="date">tuesday</p>
+                        <p onClick={() => setDeadline(3)} className="date">wednesday</p>
+                        <p onClick={() => setDeadline(4)} className="date">thursday</p>
+                        <p onClick={() => setDeadline(5)} className="date">friday</p>
+                        <p onClick={() => setDeadline(6)} className="date">saturday</p>
                     </div> </>}
         </div>
     );
