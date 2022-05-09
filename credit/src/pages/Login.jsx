@@ -50,7 +50,7 @@ const Login = () => {
         <div>
             {/* <p className='text-center text-4xl m-8 capitalize font-serif text-blue-500'> you are logged in as tosin</p> : */}
 
-            <section className='flex flex-col items-center justify-center '>
+            <section className='flex flex-col items-center justify-center mt-4'>
                 <div className='flex space-x-4'>
 
                     <h1 className='text-3xl font-semibold'>Login /</h1>
