@@ -18,7 +18,7 @@ const Login = () => {
     return (
         <div>
            
-            <section className='flex flex-col items-center justify-center h-screen '>
+            <section className='flex flex-col items-center justify-center'>
                 <div className='flex space-x-4'>
 
                     <h1 className='text-3xl font-semibold'>Admin Login </h1>
