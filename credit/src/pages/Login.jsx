@@ -30,10 +30,10 @@ const Login = () => {
         if (name && email && password) {
             const user = JSON.parse(localStorage.getItem('profile'))
 
-            const newLogin = user.find((data) => data.email === email)
+            const newLogin = user.find((data) => data.email === email && data.password === password && data.name === name )
             console.log('user', newLogin.email)
 
-            if (newLogin.email === email && newLogin.name === name) {
+            if (newLogin.email === email && newLogin.name === name && newLogin.password === password) {
                 dispatch(loginUser({ name, email, password }));
                 navigate('/home')
             }
