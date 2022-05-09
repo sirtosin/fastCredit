@@ -36,7 +36,9 @@ const Login = () => {
             if (newLogin.email === email && newLogin.name === name && newLogin.password === password) {
                 dispatch(loginUser({ name, email, password }));
                 navigate('/home')
-            }
+            }else{
+                 alert("fill in the right details")
+}
         }
 
 
