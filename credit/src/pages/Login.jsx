@@ -33,7 +33,7 @@ const Login = () => {
             const newLogin = user.find((data) => data.email === email)
             console.log('user', newLogin.email)
 
-            if (newLogin.email === email) {
+            if (newLogin.email === email && newLogin.name === name) {
                 dispatch(loginUser({ name, email, password }));
                 navigate('/home')
             }
